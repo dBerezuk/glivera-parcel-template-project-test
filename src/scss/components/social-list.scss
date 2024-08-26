@@ -1,0 +1,28 @@
+.soc1al-list {
+	display: flex;
+	align-items: center;
+	column-gap: 6px;
+
+	&__item {
+		&:first-child {
+			margin-left: -6px;
+		}
+	}
+	&__link {
+		display: block;
+		padding: 14px;
+
+		@media (max-width: $point_4) {
+			padding: 6px;
+		}
+	}
+	&__icon {
+		width: 30px;
+		aspect-ratio: 1 / 1;
+		object-fit: contain;
+
+		@media (max-width: $point_4) {
+			width: 24px;
+		}
+	}
+}

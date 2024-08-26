@@ -1,0 +1,43 @@
+.button-mobile {
+	--color: #{$color_accent};
+	--char-right: 2px;
+
+	position: relative;
+	width: 36px;
+	height: 24px;
+	padding-right: 2px;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: right;
+	color: var(--color);
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background-color: var(--color);
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&--theme-2 {
+		--color: #{$white};
+		--char-right: 40%;
+	}
+
+	span {
+		position: absolute;
+		top: 100%;
+		right: var(--char-right);
+		line-height: 0.6;
+	}
+}

@@ -1,0 +1,18 @@
+//------------------------------------------------------------layout
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 1.25rem;
+
+	height: var(--height-header);
+	width: 100%;
+
+	font-size: 0.7rem;
+
+	will-change: transform;
+
+	@include z-index(header);
+}
+
+//------------------------------------------------------------layout###

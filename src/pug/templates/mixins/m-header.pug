@@ -1,0 +1,7 @@
+include ./ui-page/m-button-mobile
+
+mixin header
+	header.header.container
+		a.logo(href="/")
+			img.logo__image(src="/src/images/logo.png", alt="TB CARE", width=253, height=43)
+		+button-mobile('Men', 'u')

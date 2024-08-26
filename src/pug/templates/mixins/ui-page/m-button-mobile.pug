@@ -1,0 +1,3 @@
+mixin button-mobile(text, char, isWhite, isOpen = "open")
+	button(type='button' class=isWhite ? 'button-mobile button-mobile--theme-2': 'button-mobile' data-type=isOpen) #{text}
+			span #{char}

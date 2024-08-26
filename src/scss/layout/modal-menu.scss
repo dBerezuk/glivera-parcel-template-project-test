@@ -1,0 +1,74 @@
+.modal-menu {
+	--translate-x: 100%;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: map-get($map: $z-index, $key: popup);
+	transform: translateX(var(--translate-x));
+	max-width: 60rem;
+	width: 100%;
+	padding: 15rem 8rem;
+	background-color: $color_accent;
+	transition: transform 0.2s ease-in-out;
+
+	@media (max-width: $point_4) {
+		max-width: none;
+		padding: 40rem 20rem;
+	}
+
+	&--open {
+		--translate-x: 0;
+	}
+
+	&__header {
+		&-button {
+			position: absolute;
+			top: 29px;
+			right: 8rem;
+
+			@media (max-width: $point_4) {
+				max-width: none;
+				top: 26px;
+			}
+		}
+	}
+
+	&__body {
+		margin-bottom: 46px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid rgba($white, 0.2);
+	}
+
+	&__menu {
+		&-list {
+			display: flex;
+			flex-direction: column;
+			row-gap: 4rem;
+		}
+		&-link {
+			font-size: 4rem;
+			color: $white;
+
+			@media (max-width: $point_4) {
+				font-size: 36px;
+			}
+		}
+	}
+
+	&__sublist {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1.3rem;
+
+		&-link {
+			font-size: 2.4rem;
+			color: $white;
+
+			@media (max-width: $point_4) {
+				font-size: 20px;
+			}
+		}
+	}
+}

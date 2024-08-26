@@ -1,0 +1,38 @@
+include ./ui-page/m-button-mobile
+
+mixin modal-menu 
+	.modal-menu
+		header.modal-menu__header
+			.modal-menu__header-button
+				+button-mobile('Clos', 'e', true, 'close')
+		.modal-menu__body 
+			nav.modal-menu__menu
+				ul.modal-menu__menu-list
+					li.modal-menu__menu-item 
+						a.modal-menu__menu-link(href='/') About Us
+						ul.modal-menu__sublist 
+							li.modal-menu__sublist-item 
+								a.modal-menu__sublist-link(href='/') About RTC
+							li.modal-menu__sublist-item 
+								a.modal-menu__sublist-link(href='/') About a4i
+							li.modal-menu__sublist-item 
+								a.modal-menu__sublist-link(href='/') About our partners
+					li.modal-menu__menu-item 
+						a.modal-menu__menu-link(href='/') Knowledge Hub
+					li.modal-menu__menu-item 
+						a.modal-menu__menu-link(href='/') Innovators Directory
+					li.modal-menu__menu-item 
+						a.modal-menu__menu-link(href='/') Application Portal
+					li.modal-menu__menu-item 
+						a.modal-menu__menu-link(href='/') News & Updates
+		footer.modal-menu__footer
+			ul.soc1al-list
+				li.soc1al-list__item 
+					a.soc1al-list__link(href='/')
+						img.soc1al-list__icon(src='/src/images/icons/other-icons/social/instagram.svg')
+				li.soc1al-list__item 
+					a.soc1al-list__link(href='/')
+						img.soc1al-list__icon(src='/src/images/icons/other-icons/social/facebook.svg')
+				li.soc1al-list__item 
+					a.soc1al-list__link(href='/')
+						img.soc1al-list__icon(src='/src/images/icons/other-icons/social/twitter.svg')
